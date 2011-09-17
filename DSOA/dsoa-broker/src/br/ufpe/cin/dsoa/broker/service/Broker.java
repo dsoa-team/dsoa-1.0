@@ -1,9 +1,9 @@
-package br.ufpe.dsoa.broker.service;
+package br.ufpe.cin.dsoa.broker.service;
 
 import java.util.List;
 
-import br.ufpe.cin.dsoa.qos.reqhandler.QosDependencyListener;
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
+import src.br.ufpe.cin.dsoa.handlers.require.QosDependencyListener;
+import src.br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 public interface Broker {
 

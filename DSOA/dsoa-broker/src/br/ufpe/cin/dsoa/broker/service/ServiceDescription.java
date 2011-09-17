@@ -1,5 +1,4 @@
-package br.ufpe.dsoa.broker.service;
-
+package br.ufpe.cin.dsoa.broker.service;
 
 public class ServiceDescription {
 
