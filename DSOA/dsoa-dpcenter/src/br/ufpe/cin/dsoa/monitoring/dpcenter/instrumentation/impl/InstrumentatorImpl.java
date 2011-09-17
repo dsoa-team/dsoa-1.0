@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.impl;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.instrumentation.impl;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -10,8 +10,8 @@ import org.osgi.framework.BundleContext;
 import org.osgi.service.event.EventConstants;
 import org.osgi.service.event.EventHandler;
 
-import br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.api.Instrumentator;
-import br.ufpe.cin.dsoa.qos.dpcenter.publication.impl.EventHandlerImpl;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.instrumentation.api.Instrumentator;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.publication.impl.EventHandlerImpl;
 
 import com.espertech.esper.client.EPServiceProvider;
 

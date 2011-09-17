@@ -1,14 +1,14 @@
-package br.ufpe.cin.dsoa.qos.slamanager.service.impl;
+package br.ufpe.cin.dsoa.slamanager.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Agreement;
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Party;
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
-import br.ufpe.cin.dsoa.qos.slamanager.service.SLAmanagerService;
+import br.ufpe.cin.dsoa.slamanager.agreement.Agreement;
+import br.ufpe.cin.dsoa.slamanager.agreement.Party;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.service.SLAmanagerService;
 
 
 public class SLAmanagerServiceImpl implements SLAmanagerService {

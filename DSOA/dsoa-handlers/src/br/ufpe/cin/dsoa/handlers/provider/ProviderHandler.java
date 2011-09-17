@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.prohandler;
+package br.ufpe.cin.dsoa.handlers.provider;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -8,7 +8,7 @@ import org.apache.felix.ipojo.PrimitiveHandler;
 import org.apache.felix.ipojo.handlers.providedservice.ProvidedServiceHandler;
 import org.apache.felix.ipojo.metadata.Element;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 public class ProviderHandler extends PrimitiveHandler {
 

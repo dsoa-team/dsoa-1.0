@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dgcenter;
+package br.ufpe.cin.dsoa.monitoring.dgcenter;
 
 import org.apache.cxf.interceptor.Interceptor;
 import org.apache.cxf.interceptor.InterceptorChain;

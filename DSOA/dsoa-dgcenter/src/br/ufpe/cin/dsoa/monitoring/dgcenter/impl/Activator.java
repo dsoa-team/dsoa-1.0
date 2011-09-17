@@ -1,10 +1,10 @@
-package br.ufpe.cin.dsoa.qos.dgcenter.impl;
+package br.ufpe.cin.dsoa.monitoring.dgcenter.impl;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-import br.ufpe.cin.dsoa.qos.dgcenter.DataGatheringCenter;
+import br.ufpe.cin.dsoa.monitoring.dgcenter.DataGatheringCenter;
 
 public class Activator implements BundleActivator {
 	private static final String MANAGEMENT_DGCENTER_MXBEAN_NAME = "management:type=DataGatheringCenter";

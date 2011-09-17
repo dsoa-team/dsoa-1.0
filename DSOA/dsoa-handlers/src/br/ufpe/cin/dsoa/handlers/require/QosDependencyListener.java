@@ -1,6 +1,4 @@
-package br.ufpe.cin.dsoa.qos.reqhandler;
-
-import br.ufpe.dsoa.broker.service.ServiceDescription;
+package br.ufpe.cin.dsoa.handlers.require;
 
 public interface QosDependencyListener {
 	

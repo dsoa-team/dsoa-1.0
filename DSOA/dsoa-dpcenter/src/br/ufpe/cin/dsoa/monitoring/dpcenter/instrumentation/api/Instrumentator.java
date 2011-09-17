@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.api;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.instrumentation.api;
 
 import java.util.Map;
 

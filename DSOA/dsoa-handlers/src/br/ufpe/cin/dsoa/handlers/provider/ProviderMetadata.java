@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.prohandler;
+package br.ufpe.cin.dsoa.handlers.provider;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.felix.ipojo.metadata.Element;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 public class ProviderMetadata {
 

@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.slamanager.agreement;
+package br.ufpe.cin.dsoa.slamanager.agreement;
 
 public enum Expression {
 	GT("GT"), LT("LT"), EQ("EQ");

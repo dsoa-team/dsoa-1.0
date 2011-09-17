@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.prohandler;
+package br.ufpe.cin.dsoa.handlers.provider;
 
 public interface ConstantsProvider {
 	/** 

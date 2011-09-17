@@ -1,10 +1,10 @@
-package br.ufpe.cin.dsoa.qos.dgcenter.impl;
+package br.ufpe.cin.dsoa.monitoring.dgcenter.impl;
 
 import org.osgi.framework.BundleContext;
 
-import br.ufpe.cin.dsoa.qos.dgcenter.DataGatheringCenter;
-import br.ufpe.cin.dsoa.qos.dgcenter.DynamicMonitoringChainerInterceptor;
-import br.ufpe.cin.dsoa.qos.dgcenter.DynamicMonitoringPublisherInterceptor;
+import br.ufpe.cin.dsoa.monitoring.dgcenter.DataGatheringCenter;
+import br.ufpe.cin.dsoa.monitoring.dgcenter.DynamicMonitoringChainerInterceptor;
+import br.ufpe.cin.dsoa.monitoring.dgcenter.DynamicMonitoringPublisherInterceptor;
 
 
 public class DataGatheringCenterImpl implements DataGatheringCenter {

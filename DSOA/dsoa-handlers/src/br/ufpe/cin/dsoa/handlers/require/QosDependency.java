@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.reqhandler;
+package br.ufpe.cin.dsoa.handlers.require;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -10,11 +10,9 @@ import org.apache.felix.ipojo.Nullable;
 import org.apache.felix.ipojo.handlers.dependency.NullableObject;
 import org.apache.felix.ipojo.util.DependencyModel;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.Constants;
 import org.osgi.framework.ServiceReference;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
-import br.ufpe.dsoa.broker.service.ServiceDescription;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 public class QosDependency extends DependencyModel implements
 FieldInterceptor, MethodInterceptor,QosDependencyListener{

@@ -3,18 +3,17 @@ package consumer.test.service;
 import provider.serasa.service.ServiceSerasa;
 import provider.spc.service.ServiceSpc;
 
-public class CompTeste implements Runnable{
+public class CompTeste implements Runnable {
 
-
-	private ServiceSpc    serviceSpc;
+	private ServiceSpc serviceSpc;
 	private ServiceSerasa serviceSerasa;
 	boolean end;
 	long delay = 3000;
-	
+
 	public CompTeste() {
 	}
 
-	public void start(){
+	public void start() {
 		end = false;
 		System.out.println("test started");
 		Thread t = new Thread(this);
@@ -22,13 +21,13 @@ public class CompTeste implements Runnable{
 		t.start();
 	}
 
-	public void stop (){
+	public void stop() {
 		end = true;
 		System.out.println("test stopped");
 	}
 
 	public void run() {
-		while (!end){
+		while (!end) {
 			callService();
 			try {
 				Thread.sleep(delay);
@@ -38,19 +37,21 @@ public class CompTeste implements Runnable{
 			}
 		}
 	}
+
 	public void callService() {
-		
-			if(serviceSerasa.searchStateSerasa("Fabio")){
-				System.out.println("");
-				System.out.println("Resposta ServiceSERASA: "+serviceSerasa.searchCauseSerasa("Fabio"));
-			}
-			
-			if(serviceSpc.searchStateSpc("Jie")){
-				System.out.println("");
-				System.out.println("Resposta ServiceSPC: " + serviceSpc.searchCauseSpc("Jie"));
-			}
-			
+
+		if (serviceSerasa.searchStateSerasa("Fabio")) {
+			System.out.println("");
+			System.out.println("Resposta ServiceSERASA: "
+					+ serviceSerasa.searchCauseSerasa("Fabio"));
+		}
+
+		if (serviceSpc.searchStateSpc("Jie")) {
+			System.out.println("");
+			System.out.println("Resposta ServiceSPC: "
+					+ serviceSpc.searchCauseSpc("Jie"));
+		}
 
 	}
-	
+
 }

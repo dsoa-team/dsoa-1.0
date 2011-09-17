@@ -1,9 +1,8 @@
-package br.ufpe.cin.dsoa.qos.dpcenter;
+package br.ufpe.cin.dsoa.monitoring.dpcenter;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
-
 
 import com.espertech.esper.client.Configuration;
 import com.espertech.esper.client.EPServiceProvider;

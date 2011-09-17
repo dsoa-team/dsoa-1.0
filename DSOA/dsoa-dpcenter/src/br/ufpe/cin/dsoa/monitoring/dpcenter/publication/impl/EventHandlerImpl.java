@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.publication.impl;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.publication.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import org.osgi.service.event.Event;
 import org.osgi.service.event.EventHandler;
 
 import br.ufpe.cin.dsoa.management.MetaData;
-import br.ufpe.cin.dsoa.qos.dpcenter.publication.api.Publisher;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.publication.api.Publisher;
 
 import com.espertech.esper.client.EPServiceProvider;
 

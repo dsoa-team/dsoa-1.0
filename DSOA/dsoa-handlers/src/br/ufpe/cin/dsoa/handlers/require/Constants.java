@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.reqhandler;
+package br.ufpe.cin.dsoa.handlers.require;
 
 public interface Constants {
 	/** 

@@ -1,5 +1,4 @@
-package br.ufpe.cin.dsoa.qos.reqhandler;
-
+package br.ufpe.cin.dsoa.handlers.require;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.List;
@@ -7,7 +6,7 @@ import java.util.List;
 import org.apache.felix.ipojo.ConfigurationException;
 import org.apache.felix.ipojo.metadata.Element;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 public class QosDependencyMetadata {
 	

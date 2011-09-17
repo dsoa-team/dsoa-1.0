@@ -2,6 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ipojo"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/osgi"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dsoa-SLAmanager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dsoa-broker"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

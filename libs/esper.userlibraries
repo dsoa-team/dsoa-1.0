@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="esper" systemlibrary="false">
+		<archive path="../../libs/esper/esper-3.5.0.jar"/>
+    </library>
+</eclipse-userlibraries>

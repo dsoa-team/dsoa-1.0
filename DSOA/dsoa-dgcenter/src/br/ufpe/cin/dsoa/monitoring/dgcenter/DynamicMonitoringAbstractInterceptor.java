@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dgcenter;
+package br.ufpe.cin.dsoa.monitoring.dgcenter;
 
 import org.apache.cxf.message.Message;
 import org.apache.cxf.phase.AbstractPhaseInterceptor;

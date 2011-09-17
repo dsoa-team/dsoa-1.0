@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.slamanager.agreement;
+package br.ufpe.cin.dsoa.slamanager.agreement;
 
 public class Slo {
 	private String name;

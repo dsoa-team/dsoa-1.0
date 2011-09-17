@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dgcenter.impl;
+package br.ufpe.cin.dsoa.monitoring.dgcenter.impl;
 
 import java.lang.management.ManagementFactory;
 

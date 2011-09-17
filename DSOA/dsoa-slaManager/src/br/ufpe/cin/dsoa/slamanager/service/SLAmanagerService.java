@@ -1,9 +1,9 @@
-package br.ufpe.cin.dsoa.qos.slamanager.service;
+package br.ufpe.cin.dsoa.slamanager.service;
 
 import java.util.Map;
 import java.util.Properties;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
 
 
 public interface SLAmanagerService {

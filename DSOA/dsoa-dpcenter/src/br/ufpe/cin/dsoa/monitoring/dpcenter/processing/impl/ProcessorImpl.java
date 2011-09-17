@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.processing.impl;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,15 +7,15 @@ import org.osgi.framework.BundleContext;
 
 import br.ufpe.cin.dsoa.management.MetaData;
 import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.DimensionExp;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.Processor;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.WindowExp;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplCount;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplMax;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplMean;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplMin;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window.WindowImplSize;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window.WindowImplTime;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.DimensionExp;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.Processor;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.WindowExp;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.dimension.DimensionExpImplCount;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.dimension.DimensionExpImplMax;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.dimension.DimensionExpImplMean;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.dimension.DimensionExpImplMin;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.window.WindowImplSize;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.window.WindowImplTime;
 
 import com.espertech.esper.client.EPServiceProvider;
 import com.espertech.esper.client.EPStatement;

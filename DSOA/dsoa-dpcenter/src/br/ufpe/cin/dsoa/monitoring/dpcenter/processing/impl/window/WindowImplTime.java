@@ -1,7 +1,7 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.window;
 
 import br.ufpe.cin.dsoa.management.MetaData;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.WindowExp;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.WindowExp;
 
 import com.espertech.esper.client.soda.Expression;
 import com.espertech.esper.client.soda.Expressions;

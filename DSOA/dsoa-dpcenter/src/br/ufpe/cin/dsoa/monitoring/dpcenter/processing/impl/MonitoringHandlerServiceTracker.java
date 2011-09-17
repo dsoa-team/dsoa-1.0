@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.processing.impl;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl;
 
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;

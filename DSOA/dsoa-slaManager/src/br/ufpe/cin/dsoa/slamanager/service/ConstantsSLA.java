@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.slamanager.service;
+package br.ufpe.cin.dsoa.slamanager.service;
 
 public interface ConstantsSLA {
 

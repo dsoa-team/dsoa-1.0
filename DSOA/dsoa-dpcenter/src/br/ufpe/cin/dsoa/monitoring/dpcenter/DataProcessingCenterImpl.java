@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.dpcenter;
+package br.ufpe.cin.dsoa.monitoring.dpcenter;
 
 import java.util.Map;
 
@@ -10,10 +10,10 @@ import org.osgi.util.tracker.ServiceTrackerCustomizer;
 import br.ufpe.cin.dsoa.management.MetaData;
 import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 import br.ufpe.cin.dsoa.management.MonitoringService;
-import br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.api.Instrumentator;
-import br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.impl.InstrumentatorImpl;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.Processor;
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.ProcessorImpl;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.instrumentation.api.Instrumentator;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.instrumentation.impl.InstrumentatorImpl;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.Processor;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.ProcessorImpl;
 
 import com.espertech.esper.client.EPServiceProvider;
 

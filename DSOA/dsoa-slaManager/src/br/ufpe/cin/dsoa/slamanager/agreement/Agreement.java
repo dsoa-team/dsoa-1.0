@@ -1,10 +1,10 @@
-package br.ufpe.cin.dsoa.qos.slamanager.agreement;
+package br.ufpe.cin.dsoa.slamanager.agreement;
 
  import java.util.Date;
 import java.util.Map;
 import java.util.Properties;
 
-import br.ufpe.cin.dsoa.qos.slamanager.service.ConstantsSLA;
+import br.ufpe.cin.dsoa.slamanager.service.ConstantsSLA;
 
 public class Agreement {
 

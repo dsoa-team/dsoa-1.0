@@ -1,8 +1,8 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.publication.impl;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.publication.impl;
 
 import java.util.Map;
 
-import br.ufpe.cin.dsoa.qos.dpcenter.publication.api.Publisher;
+import br.ufpe.cin.dsoa.monitoring.dpcenter.publication.api.Publisher;
 
 import com.espertech.esper.client.EPServiceProvider;
 

@@ -1,9 +1,9 @@
-package br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension;
+package br.ufpe.cin.dsoa.monitoring.dpcenter.processing.impl.dimension;
+
+import br.ufpe.cin.dsoa.monitoring.dpcenter.processing.api.DimensionExp;
 
 import com.espertech.esper.client.soda.Expression;
 import com.espertech.esper.client.soda.Expressions;
-
-import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.DimensionExp;
 
 public class DimensionExpImplCount implements DimensionExp {
 

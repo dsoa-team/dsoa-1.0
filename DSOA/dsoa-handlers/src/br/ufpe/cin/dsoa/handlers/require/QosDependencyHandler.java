@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.reqhandler;
+package br.ufpe.cin.dsoa.handlers.require;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -14,9 +14,9 @@ import org.apache.felix.ipojo.parser.PojoMetadata;
 import org.apache.felix.ipojo.util.DependencyModel;
 import org.apache.felix.ipojo.util.DependencyStateListener;
 
-import br.ufpe.cin.dsoa.qos.slamanager.agreement.Slo;
-import br.ufpe.cin.dsoa.qos.slamanager.service.ConstantsSLA;
-import br.ufpe.cin.dsoa.qos.slamanager.service.SLAmanagerService;
+import br.ufpe.cin.dsoa.slamanager.agreement.Slo;
+import br.ufpe.cin.dsoa.slamanager.service.ConstantsSLA;
+import br.ufpe.cin.dsoa.slamanager.service.SLAmanagerService;
 
 public class QosDependencyHandler extends PrimitiveHandler implements DependencyStateListener{
 	
