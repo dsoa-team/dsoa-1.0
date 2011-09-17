@@ -1,0 +1,2 @@
+Private-Package: br.ufpe.cin.dsoa.qos.dpcenter, br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.api, br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.impl, br.ufpe.cin.dsoa.qos.dpcenter.processing.api, br.ufpe.cin.dsoa.qos.dpcenter.processing.impl, br.ufpe.cin.dsoa.qos.dpcenter.publication.api, br.ufpe.cin.dsoa.qos.dpcenter.publication.impl, br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension, br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window    
+Bundle-Activator: br.ufpe.cin.dsoa.qos.dpcenter.Activator

@@ -1,0 +1,4 @@
+Import-Package: org.osgi.framework,br.ufpe.cin.dsoa.qos.dgcenter,br.ufpe.cin.dsoa.qos.management.util,org.apache.cxf.message,org.apache.cxf.phase,org.osgi.util.tracker,br.ufpe.cin.dsoa.qos.management,org.apache.cxf.interceptor,org.apache.cxf.service,org.apache.cxf.service.model,org.osgi.service.event, javax.management, javax.xml.namespace  
+Export-Package: br.ufpe.cin.dsoa.qos.dgcenter, br.ufpe.cin.dsoa.qos.dgcenter.impl
+Private-Package: br.ufpe.cin.dsoa.qos.dgcenter, br.ufpe.cin.dsoa.qos.dgcenter.impl 
+Bundle-Activator: br.ufpe.cin.dsoa.qos.dgcenter.impl.Activator

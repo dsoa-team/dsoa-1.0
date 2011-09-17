@@ -1,0 +1,25 @@
+ <ipojo xmlns:qos="br.ufpe.cin.dsoa.qos.prohandler"> -->
+	<component classname="provider.spc.service.impl.ServiceSpcImpl">
+		<provides/>
+		
+		<qos:provides pid="provider.spc.service.impl.ServiceSpcImpl" name="QoS Test Provider"
+			duration.value="86400000" duration.unit="ms">
+			<slo name="processingTime" value="30000"  target="searchStateSpc"/>
+			<slo name="throughput"     value="20000"  target="searchStateSpc"/>
+			<slo name="processingTime" value="40000"  target="searchCauseSpc"/>
+			<slo name="throughput"     value="10000"  target="searchCauseSpc"/>
+			<slo name="avaliability"   value="0.95"/>
+		</qos:provides>	
+			
+	</component>
+	
+	<instance component="provider.spc.service.impl.ServiceSpcImpl" name="Provider.Instance-1-Spc"/>
+	
+<!--inicialmente nao sera distribuido
+	<instance component="provider.spc.service.impl.ServiceSpcImpl" name="Provider.Instance-1">
+		<property name="service.exported.interfaces" value="*"                                  type="java.lang.String"/>
+		<property name="service.exported.configs"    value="org.apache.cxf.ws"                  type="java.lang.String"/>
+		<property name="org.apache.cxf.ws.address"   value="http://localhost:9080/helloService" type="java.lang.String"/>
+	</instance>
+-->	
+</ipojo>

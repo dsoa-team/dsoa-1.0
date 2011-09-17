@@ -1,0 +1,23 @@
+<ipojo xmlns:qos="br.ufpe.cin.dsoa.qos.reqhandler">
+	<component classname="consumer.test.service.CompTeste">
+
+		<callback transition="validate" method="start" />
+		
+		<qos:requires pid="consumer.comp.test" name="consumer test">
+
+			<service field="serviceSpc">
+				<slo name="responseTime" expression="lessThan"    value="30000" target="searchStateSpc" weight="1"/>
+				<slo name="throughput"   expression="greaterThan" value="20000" target="searchCauseSpc" weight="2"/>
+			</service>
+
+			<service field="serviceSerasa">
+				<slo name="processingTime" expression="lessThan"    value="20000" target="searchStateSerasa" weight="3"/>
+				<slo name="throughput"     expression="greaterThan" value="10000" target="searchCauseSerasa" weight="4"/>
+			</service>
+			
+		</qos:requires>
+	</component>
+
+	<instance component="consumer.test.service.CompTeste" name="Consumer.Instace-1" />
+
+</ipojo>

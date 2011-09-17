@@ -1,0 +1,25 @@
+<ipojo xmlns:qos="br.ufpe.cin.dsoa.qos.prohandler">
+	<component classname="provider.serasa.service.impl.ServiceSerasaImpl">
+		<provides/>
+		
+		<qos:provides pid="provider.serasa.service.impl.ServiceSerasaImpl" name="QoS Test Provider"
+			duration.value="86500000" duration.unit="ms">
+			<slo name="processingTime" value="10000"  target="searchStateSerasa"/>
+			<slo name="throughput"     value="40000"  target="searchStateSerasa"/>
+			<slo name="processingTime" value="50000"  target="searchCauseSerasa"/>
+			<slo name="throughput"     value="70000"  target="searchCauseSerasa"/>
+			<slo name="availability"   value="0.99"/>
+		</qos:provides>	
+		
+	</component>
+	
+	<instance component="provider.serasa.service.impl.ServiceSerasaImpl" name="Provider.Instance-1-Serasa"/>
+
+<!--inicialmente nao sera distribuido 
+	<instance component="provider.serasa.service.impl.ServiceSerasaImpl" name="Provider.Instance-1-Serasa">
+		<property name="service.exported.interfaces" value="*"                                  type="java.lang.String"/>
+		<property name="service.exported.configs"    value="org.apache.cxf.ws"                  type="java.lang.String"/>
+		<property name="org.apache.cxf.ws.address"   value="http://localhost:9089/helloService" type="java.lang.String"/>
+	</instance>
+ -->	
+</ipojo>

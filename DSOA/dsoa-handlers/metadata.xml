@@ -1,0 +1,8 @@
+<ipojo>
+	<handler
+		classname="br.ufpe.cin.dsoa.qos.reqhandler.QosDependencyHandler"
+		name="requires" namespace="br.ufpe.cin.dsoa.qos.reqhandler">
+		
+		<requires field="slaManagerService" />
+	</handler>
+</ipojo>

@@ -1,0 +1,4 @@
+Import-Package: org.osgi.framework, javax.management, org.osgi.util.tracker, br.ufpe.cin.dsoa.qos.management
+Private-Package: br.ufpe.cin.dsoa.qos.management, br.ufpe.cin.dsoa.qos.management.impl 
+Bundle-Activator: br.ufpe.cin.dsoa.qos.management.impl.Activator
+Export-Package: br.ufpe.cin.dsoa.qos.management, br.ufpe.cin.dsoa.qos.management.util
