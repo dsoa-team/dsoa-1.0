@@ -2,7 +2,7 @@ package br.ufpe.cin.dsoa.qos.dpcenter;
 
 import java.util.Map;
 
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 
 public interface DataProcessingCenter {
 	

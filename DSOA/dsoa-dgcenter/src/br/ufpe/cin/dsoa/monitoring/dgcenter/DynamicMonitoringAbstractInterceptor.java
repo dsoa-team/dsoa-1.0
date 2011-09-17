@@ -8,8 +8,8 @@ import org.osgi.framework.Filter;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.util.tracker.ServiceTracker;
 
-import br.ufpe.cin.dsoa.qos.management.MetaData;
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MetaData;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 
 /**
  * This class is responsible for maintaining a list MonitoringServices which are

@@ -6,8 +6,8 @@ import java.util.Map;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventHandler;
 
+import br.ufpe.cin.dsoa.management.MetaData;
 import br.ufpe.cin.dsoa.qos.dpcenter.publication.api.Publisher;
-import br.ufpe.cin.dsoa.qos.management.MetaData;
 
 import com.espertech.esper.client.EPServiceProvider;
 

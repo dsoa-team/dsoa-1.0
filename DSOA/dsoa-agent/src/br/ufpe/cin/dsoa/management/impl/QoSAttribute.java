@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.management.impl;
+package br.ufpe.cin.dsoa.management.impl;
 
 public class QoSAttribute {
 	private String qosCategory;

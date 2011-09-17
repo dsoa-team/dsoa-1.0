@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.management.impl;
+package br.ufpe.cin.dsoa.management.impl;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -20,11 +20,11 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.util.tracker.ServiceTracker;
 
-import br.ufpe.cin.dsoa.qos.management.ManagementAgentMXBean;
-import br.ufpe.cin.dsoa.qos.management.MetaData;
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
-import br.ufpe.cin.dsoa.qos.management.MonitoringHandler;
-import br.ufpe.cin.dsoa.qos.management.MonitoringService;
+import br.ufpe.cin.dsoa.management.ManagementAgentMXBean;
+import br.ufpe.cin.dsoa.management.MetaData;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MonitoringHandler;
+import br.ufpe.cin.dsoa.management.MonitoringService;
 
 class ManagementAgent implements ManagementAgentMXBean {
 

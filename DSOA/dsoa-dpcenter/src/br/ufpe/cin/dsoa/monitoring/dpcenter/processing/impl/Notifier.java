@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.osgi.framework.BundleContext;
 
-import br.ufpe.cin.dsoa.qos.management.MonitoringEvent;
-import br.ufpe.cin.dsoa.qos.management.MonitoringHandler;
+import br.ufpe.cin.dsoa.management.MonitoringEvent;
+import br.ufpe.cin.dsoa.management.MonitoringHandler;
 
 import com.espertech.esper.client.EventBean;
 import com.espertech.esper.client.UpdateListener;

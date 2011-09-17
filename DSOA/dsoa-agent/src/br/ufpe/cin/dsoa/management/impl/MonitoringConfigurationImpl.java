@@ -1,11 +1,11 @@
-package br.ufpe.cin.dsoa.qos.management.impl;
+package br.ufpe.cin.dsoa.management.impl;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
-import br.ufpe.cin.dsoa.qos.management.MonitoringService;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MonitoringService;
 
 
 class MonitoringConfigurationImpl implements MonitoringConfiguration {

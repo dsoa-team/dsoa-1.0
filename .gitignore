@@ -1,4 +1,5 @@
 *.classpath
-*/bin
+*bin
 *.jar
 *.class
+*.directory

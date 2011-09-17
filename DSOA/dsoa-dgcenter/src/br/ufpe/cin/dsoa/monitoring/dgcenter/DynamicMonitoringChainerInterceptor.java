@@ -8,7 +8,7 @@ import org.apache.cxf.phase.Phase;
 import org.apache.cxf.service.model.OperationInfo;
 import org.osgi.framework.BundleContext;
 
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 
 public class DynamicMonitoringChainerInterceptor extends
 		DynamicMonitoringAbstractInterceptor {

@@ -7,13 +7,13 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.util.tracker.ServiceTracker;
 import org.osgi.util.tracker.ServiceTrackerCustomizer;
 
+import br.ufpe.cin.dsoa.management.MetaData;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MonitoringService;
 import br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.api.Instrumentator;
 import br.ufpe.cin.dsoa.qos.dpcenter.instrumentation.impl.InstrumentatorImpl;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.Processor;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.ProcessorImpl;
-import br.ufpe.cin.dsoa.qos.management.MetaData;
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
-import br.ufpe.cin.dsoa.qos.management.MonitoringService;
 
 import com.espertech.esper.client.EPServiceProvider;
 

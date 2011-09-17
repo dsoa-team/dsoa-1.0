@@ -13,8 +13,8 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventAdmin;
 
-import br.ufpe.cin.dsoa.qos.management.MetaData;
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
+import br.ufpe.cin.dsoa.management.MetaData;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 
 public class DynamicMonitoringPublisherInterceptor extends
 		DynamicMonitoringAbstractInterceptor {

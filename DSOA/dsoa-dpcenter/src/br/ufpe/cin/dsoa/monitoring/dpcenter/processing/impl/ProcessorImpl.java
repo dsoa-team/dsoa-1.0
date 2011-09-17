@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.osgi.framework.BundleContext;
 
+import br.ufpe.cin.dsoa.management.MetaData;
+import br.ufpe.cin.dsoa.management.MonitoringConfiguration;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.DimensionExp;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.Processor;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.api.WindowExp;
@@ -14,8 +16,6 @@ import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplM
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.dimension.DimensionExpImplMin;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window.WindowImplSize;
 import br.ufpe.cin.dsoa.qos.dpcenter.processing.impl.window.WindowImplTime;
-import br.ufpe.cin.dsoa.qos.management.MetaData;
-import br.ufpe.cin.dsoa.qos.management.MonitoringConfiguration;
 
 import com.espertech.esper.client.EPServiceProvider;
 import com.espertech.esper.client.EPStatement;

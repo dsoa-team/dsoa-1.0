@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.management.util;
+package br.ufpe.cin.dsoa.management.util;
 
 import java.lang.management.ManagementFactory;
 

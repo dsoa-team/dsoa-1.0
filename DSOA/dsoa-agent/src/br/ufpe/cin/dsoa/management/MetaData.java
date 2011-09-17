@@ -1,4 +1,4 @@
-package br.ufpe.cin.dsoa.qos.management;
+package br.ufpe.cin.dsoa.management;
 
 
 public interface MetaData {

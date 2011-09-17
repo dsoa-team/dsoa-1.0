@@ -1,11 +1,11 @@
-package br.ufpe.cin.dsoa.qos.management.impl;
+package br.ufpe.cin.dsoa.management.impl;
 
 import javax.management.ObjectName;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import br.ufpe.cin.dsoa.qos.management.util.JMXUtil;
+import br.ufpe.cin.dsoa.management.util.JMXUtil;
 
 public class Activator implements BundleActivator {
 	
