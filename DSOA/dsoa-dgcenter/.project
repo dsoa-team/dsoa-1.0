@@ -14,4 +14,10 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>DSOA_LIBS</name>
+			<value>file:/C:/Users/Tarcisio/Desktop/TESTE/dsoa/libs</value>
+		</variable>
+	</variableList>
 </projectDescription>
