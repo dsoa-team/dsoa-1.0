@@ -1,0 +1,6 @@
+<ipojo>
+	<handler
+		classname="br.ufpe.cin.dsoa.qos.impl.DsoaDependencyHandler"
+		name="requires" namespace="br.ufpe.cin.dsoa.qos.impl.adaptation-manager">
+	</handler>
+</ipojo>

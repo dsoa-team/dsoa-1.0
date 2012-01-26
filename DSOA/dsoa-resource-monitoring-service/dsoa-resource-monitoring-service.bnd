@@ -1,0 +1,2 @@
+Private-Package: br.ufpe.cin.dsoa.jmx.monitor
+Bundle-Activator: br.ufpe.cin.dsoa.jmx.monitor.Activator

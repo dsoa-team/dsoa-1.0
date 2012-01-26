@@ -1,0 +1,1 @@
+Private-Package: br.ufpe.cin.dsoa.broker, br.ufpe.cin.dsoa.broker.filter, br.ufpe.cin.dsoa.broker.impl, br.ufpe.cin.dsoa.manager, br.ufpe.cin.dsoa.qos.impl, br.ufpe.cin.dsoa.rank, br.ufpe.cin.dsoa.broker.norm

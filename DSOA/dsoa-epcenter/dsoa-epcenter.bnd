@@ -1,0 +1,3 @@
+Bundle-Activator: br.ufpe.cin.dsoa.qos.epcenter.activator.Activator
+Export-Package: br.ufpe.cin.dsoa.qos.epcenter.service, br.ufpe.cin.dsoa.qos.epcenter.activator 
+Private-Package: br.ufpe.cin.dsoa.qos.epcenter.impl, br.ufpe.cin.dsoa.qos.epcenter.service

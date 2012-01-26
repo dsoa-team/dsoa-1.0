@@ -1,0 +1,6 @@
+<ipojo>
+	<handler classname="br.ufpe.cin.dsoa.manager.ProviderManager"
+	    name="provider-manager" 
+	    namespace="br.ufpe.cin.dsoa.manager" >
+	</handler>
+</ipojo>

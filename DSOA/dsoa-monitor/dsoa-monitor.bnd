@@ -1,0 +1,3 @@
+Bundle-Activator: br.ufpe.cin.dsoa.qos.monitoring.activator.Activator 
+Export-Package: br.ufpe.cin.dsoa.qos.monitoring.service.events, br.ufpe.cin.dsoa.qos.monitoring.service, br.ufpe.cin.dsoa.qos.monitoring.activator 
+Private-Package: br.ufpe.cin.dsoa.qos.monitoring.service.events, br.ufpe.cin.dsoa.qos.monitoring.service, br.ufpe.cin.dsoa.qos.monitoring.impl, br.ufpe.cin.dsoa.qos.monitoring.eql
