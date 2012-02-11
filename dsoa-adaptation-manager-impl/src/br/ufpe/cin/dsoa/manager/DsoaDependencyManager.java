@@ -2,10 +2,14 @@ package br.ufpe.cin.dsoa.manager;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.logging.Level;
 
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.Constants;
@@ -30,6 +34,7 @@ import br.ufpe.cin.dsoa.qos.monitoring.service.events.ErrorEvent;
 import br.ufpe.cin.dsoa.qos.monitoring.service.events.Event;
 import br.ufpe.cin.dsoa.qos.monitoring.service.events.RequestEvent;
 import br.ufpe.cin.dsoa.qos.monitoring.service.events.ResponseEvent;
+import br.ufpe.cin.log.generator.service.LogGenerator;
 
 public class DsoaDependencyManager implements InvocationHandler,
 		QosDependencyListener, MonitoringListener, ServiceTrackerCustomizer {
@@ -44,6 +49,7 @@ public class DsoaDependencyManager implements InvocationHandler,
 	private MonitoringConfiguration configuration;
 	private MonitoringService monitoringService;
 	private final List<ServiceReference> blackList;
+	private LogGenerator logGenerator;
 
 	public DsoaDependencyManager(DsoaDependency dependency) {
 		this.dependency = dependency;
@@ -57,23 +63,30 @@ public class DsoaDependencyManager implements InvocationHandler,
 
 		broker.getBestService(dependency.getSpecification().getName(),
 				dependency.getSlos(), this, blackList);
+		
+		ServiceReference reference = ctx.getServiceReference(LogGenerator.class.getName());
+		if (reference != null) {
+			this.logGenerator = (LogGenerator) ctx.getService(reference);
+		}
+		
+		
 	}
 
 	public synchronized void setSelected(final ServiceReference reference) {
 		if (null != monitoringService) {
 			this.serviceReference = reference;
 			this.service = ctx.getService(reference);
-			System.out.println("Receiving a NEW reference..."
-					+ reference.getProperty("provider.pid"));
+			System.out.println("Receiving a NEW reference..." + reference.getProperty("provider.pid"));
 
-			this.configuration = new MonitoringConfiguration(
-					dependency.getConsumerPID(),
-					(reference.getProperty("provider.pid")).toString(), this);
+			this.configuration = new MonitoringConfiguration(dependency.getConsumerPID(),
+			reference.getProperty("provider.pid").toString(), this);
+			
 			for (Slo slo : this.dependency.getSlos()) {
-				MonitoringConfigurationItem item = new MonitoringConfigurationItem(
-						slo.getOperation(), slo.getAttribute(), slo
-								.getExpression().getOperator(), slo.getValue(),
-						slo.getStatistic(), configuration);
+				MonitoringConfigurationItem item = new MonitoringConfigurationItem(slo.getOperation(), 
+																				   slo.getAttribute(), 
+																				   slo.getExpression().getOperator(),
+																				   slo.getValue(),
+																				   slo.getStatistic(), configuration);
 				this.configuration.addConfigurationItem(item);
 			}
 			monitoringService.startMonitoring(configuration);
@@ -151,12 +164,16 @@ public class DsoaDependencyManager implements InvocationHandler,
 			System.out.println("");
 			System.out.println("");
 		}
+		
+		//linhas adicionadas para considerar efetivas trocas
+		this.blackList.removeAll(blackList);
+		
+		
 		this.blackList.add(this.serviceReference);
 		this.service = null;
 		this.ctx.ungetService(this.serviceReference);
 		this.serviceReference = null;
-		broker.getBestService(dependency.getSpecification().getName(),
-				dependency.getSlos(), this, this.blackList);
+		broker.getBestService(dependency.getSpecification().getName(),dependency.getSlos(), this, this.blackList);
 	}
 
 	private void sendEvent(Event event) {
@@ -169,14 +186,25 @@ public class DsoaDependencyManager implements InvocationHandler,
 
 	private void sendRequestEvent(Long correlationId, Method method,
 			Object[] args) {
-		sendEvent(new RequestEvent(System.currentTimeMillis(),
+		sendEvent(new RequestEvent(System.nanoTime(),
 				configuration.getClientId(), configuration.getServiceId(),
 				correlationId.toString(), method.getName(), null, null, args));
+		
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss.SSS");
+		StringBuilder builder = new StringBuilder(1000);
+		builder.append("Request").append(" - ");
+		builder.append(df.format(new Date(System.currentTimeMillis()))).append(" - ");
+		builder.append(correlationId.toString()).append(" - ");
+		builder.append(configuration.getClientId()).append(" - ");
+		builder.append(configuration.getServiceId()).append(" - ");
+		builder.append(method.getName());
+		logGenerator.log(Level.INFO, builder.toString());
+		
 	}
 
 	private void sendResponseEvent(Long correlationId, Method method,
 			Object result) {
-		sendEvent(new ResponseEvent(System.currentTimeMillis(),
+		sendEvent(new ResponseEvent(System.nanoTime(),
 				configuration.getClientId(), configuration.getServiceId(),
 				correlationId.toString(), method.getName(), null, result));
 	}
@@ -189,18 +217,25 @@ public class DsoaDependencyManager implements InvocationHandler,
 			rootCause = cause;
 			cause = rootCause.getCause();
 		}
-		sendEvent(new ErrorEvent(System.currentTimeMillis(),
+		sendEvent(new ErrorEvent(System.nanoTime(),
 				configuration.getClientId(), configuration.getServiceId(),
 				correlationId.toString(), method.getName(), rootCause
 						.getClass().getName(), rootCause.getMessage()));
-		System.out.println("============>>>> " + rootCause.getClass());
-		System.out.println("============>>>> " + rootCause.getCause());
-		System.out.println("Excecao de erro publicada: " + rootCause
-				.getClass().getName());
+		
+		DateFormat df = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss.SSS");
+		StringBuilder builder = new StringBuilder(1000);
+		builder.append("Error").append(" - ");
+		builder.append(df.format(new Date(System.currentTimeMillis()))).append(" - ");
+		builder.append(correlationId.toString()).append(" - ");
+		builder.append(configuration.getClientId()).append(" - ");
+		builder.append(configuration.getServiceId()).append(" - ");
+		builder.append(method.getName());
+		logGenerator.log(Level.INFO, builder.toString());
+		
 	}
 
 	private void sendArrivalEvent(ServiceReference reference) {
-		sendEvent(new ArrivalEvent(System.currentTimeMillis(), reference
+		sendEvent(new ArrivalEvent(System.nanoTime(), reference
 				.getProperty("provider.pid").toString(),
 				(reference.getProperty("provider.pid") != null ? reference
 						.getProperty("provider.pid") : reference
@@ -209,7 +244,7 @@ public class DsoaDependencyManager implements InvocationHandler,
 	}
 
 	private void sendDepartureEvent(ServiceReference reference) {
-		sendEvent(new DepartureEvent(System.currentTimeMillis(), reference
+		sendEvent(new DepartureEvent(System.nanoTime(), reference
 				.getProperty("provider.pid").toString(),
 				(reference.getProperty("provider.pid") != null ? reference
 						.getProperty("provider.pid") : reference

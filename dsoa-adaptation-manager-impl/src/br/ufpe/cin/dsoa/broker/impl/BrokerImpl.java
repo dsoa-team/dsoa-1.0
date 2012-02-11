@@ -2,7 +2,6 @@ package br.ufpe.cin.dsoa.broker.impl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import org.osgi.framework.BundleContext;
@@ -44,7 +43,7 @@ public class BrokerImpl implements Broker {
 		filter.add(new IFilter(Constants.OBJECTCLASS, spe));
 		for(Slo slo: slos) {
 			if(slo.getOperation() != null) {
-				filter.add(new DFilter(slo.getAttribute() + "." + slo.getOperation(), 
+				filter.add(new DFilter(slo.getOperation() + "." + slo.getAttribute(), 
 						slo.getExpression(), slo.getValue()));
 			} else {
 				filter.add(new DFilter(slo.getAttribute(), slo.getExpression(), slo.getValue()));
