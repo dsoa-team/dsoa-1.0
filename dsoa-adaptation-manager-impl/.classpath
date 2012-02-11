@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_21"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/iPojo"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/osgi"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dsoa-adaptation-manager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dsoa-broker"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dsoa-monitor"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

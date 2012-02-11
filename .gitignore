@@ -1,5 +1,5 @@
-*.classpath
 *bin
 *.jar
 *.class
 *.directory
+*svn
