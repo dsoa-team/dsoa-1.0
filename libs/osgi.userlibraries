@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<eclipse-userlibraries version="2">
-    <library name="osgi" systemlibrary="true">
-        <archive path="C:/Users/Tarcisio/Desktop/TESTE/dsoa/libs/osgi/org.osgi.compendium-4.2.0.jar" source="C:/Users/Tarcisio/Desktop/TESTE/dsoa/libs/osgi/org.osgi.compendium-1.5.0-SNAPSHOT.jar"/>
-        <archive path="C:/Users/Tarcisio/Desktop/TESTE/dsoa/libs/osgi/org.osgi.core-4.2.0.jar" source="C:/Users/Tarcisio/Desktop/TESTE/dsoa/libs/osgi/org.osgi.core-1.5.0-SNAPSHOT.jar"/>
-    </library>
-</eclipse-userlibraries>
